@@ -42,7 +42,7 @@ def splineCubico(t,M,h,A,B,T,n):
     valor = M[i]/(6.0 * h[i+1]) * ((T[i+1] - t) ** 3)
     valor += M[i+1]/(6.0 * h[i+1]) * ((t - T[i]) ** 3)
     valor += A[i] * (t - T[i]) + B[i]
-    valor -= 100 + 2*tal
+    valor -= (100 - 2*tal)
 
     return valor
 

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8ca25be9-2526-4d06-bed1-12d3d897306e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tarefa1.py</StartupFile>
+    <StartupFile>tarefa2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -42,6 +42,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="tarefa1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tarefa2.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test.py">

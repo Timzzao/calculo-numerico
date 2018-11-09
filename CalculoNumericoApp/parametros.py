@@ -31,7 +31,7 @@ def parametroD(x,h,t,n):
 def parametroB(y,M,h,n):
     B = np.zeros(n)
     for i in range (0, n - 1, 1):
-        B[i] = y[i] - (M[i] / 6.0) * pow(h[i+1], 2)       
+        B[i] = y[i] - (M[i] / 6.0) * pow(h[i+1], 2)
     return B
 
 def parametroA(y,M,h,n):
