@@ -5,6 +5,7 @@ import parametros
 import construtor
 import sigma
 import gauss
+import newton
 import numpy as np
 
 n = 30
@@ -38,38 +39,57 @@ def inicializar():
     global Matriz
     Matriz = construtor.construirMatriz(u,l,n)
 
-def exercicio1():
+def exercicio1_2():
     print("Exercicios 1")
     inicializar()
     M = gauss.gauss(n,Matriz,d)
+    print("Parametro M")
+    print(str(np.array(M)))
     A = parametros.parametroA(x,M,h,n)
+    print("Parametro A")
+    print(str(np.array(A)))
     B = parametros.parametroB(x,M,h,n)
+    print("Parametro B")
+    print(str(np.array(B)))
 
     valoresDeTeste = np.zeros(n);
     valoresDeTeste[0] = (t[1] + t[0]) / 2
 
-    print("Teste do polinomio")
+    print("Valores de t")
     for i in range(1, n, 1):
         valoresDeTeste[i] = valoresDeTeste[i - 1] + (1.0/60)
-        print(str(valoresDeTeste[i]))
+    print(str(np.array(valoresDeTeste)))
 
     print("Teste do polinomio")
+    spline = np.zeros(n)
     for i in range(0, n, 1):
-        temp = util.splineCubico(valoresDeTeste[i],M,h,A,B,t,n)
-        print(str(temp))
+        spline[i] = util.splineCubico(valoresDeTeste[i],M,h,A,B,t,n)
+    print(str(np.array(spline)))
 
     print("Teste da primeira derivada")
+    derivada1 = np.zeros(n)
     for i in range(0, n, 1):
-        temp = util.derivadaSC(valoresDeTeste[i],M,h,A,B,t,n)
-        print(str(temp))
+        derivada1[i] = util.derivadaSC(valoresDeTeste[i],M,h,A,B,t,n)
+    print(str(np.array(derivada1)))
 
     print("Teste da segunda derivada")
+    derivada2 = np.zeros(n)
     for i in range(0, n, 1):
-        temp = util.segundaDerivadaSC(valoresDeTeste[i],M,h,A,B,t,n)
-        print(str(temp))
+        derivada2[i] = util.segundaDerivadaSC(valoresDeTeste[i],M,h,A,B,t,n)
+    print(str(np.array(derivada2)))
+
+    print("O intervalo escolhido é [t19, t20]")
+
+    print("Exercicio 2")
+
+    print("O chute será 0.33")
+
+    raiz = newton.newton(0.33,M,h,A,B,t,n,10**-10,n)
+
+    print("O t é: " + str(raiz))
 
 def main():
-    exercicio1()
+    exercicio1_2()
 
 if __name__ == "__main__":
     main()
