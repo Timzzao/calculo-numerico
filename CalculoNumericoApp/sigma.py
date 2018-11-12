@@ -7,5 +7,6 @@ def sigma(A,n):
         for j in range(0, n, 1):
             if not (i == j):
                 vetorSigma[i] += A[i][j]
+        print("Linha " + str(i + 1) + ": " + str(vetorSigma[i]))
         vetorSigma[i] /= A[i][i]
     return vetorSigma.max()

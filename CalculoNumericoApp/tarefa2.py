@@ -82,9 +82,9 @@ def exercicio1_2():
 
     print("Exercicio 2")
 
-    print("O chute será 0.33")
+    print("O chute será 0.333")
 
-    raiz = newton.newton(0.33,M,h,A,B,t,n,10**-10,n)
+    raiz = newton.newton(0.333,M,h,A,B,t,n,10**-10,n)
 
     print("O t é: " + str(raiz))
 

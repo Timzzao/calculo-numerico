@@ -78,12 +78,15 @@ def exercicio4_5():
 
     print("Sistema resolvido pelo método de Gauss: \n")
 
+    print("M: ")
     for i in range(n):
-        print("M[" + str(i) + "]: " + str(M[i]) + "\n")
+        print(str(M[i]))
+    print("A: ")
     for i in range(n):
-        print("A[" + str(i) + "]: " + str(A[i]) + "\n")
+        print(str(A[i]))
+    print("B: ")
     for i in range(n):
-        print("B[" + str(i) + "]: " + str(B[i]) + "\n")
+        print(str(B[i]))
     print("\n")
     
     inicializar()
@@ -93,12 +96,15 @@ def exercicio4_5():
 
     print("Sistema resolvido pelo método de Jacobi: \n")
 
+    print("M: ")
     for i in range(n):
-        print("M[" + str(i) + "]: " + str(M[i]) + "\n")
+        print(str(M[i]))
+    print("A: ")
     for i in range(n):
-        print("A[" + str(i) + "]: " + str(A[i]) + "\n")
+        print(str(A[i]))
+    print("B: ")
     for i in range(n):
-        print("B[" + str(i) + "]: " + str(B[i]) + "\n")
+        print(str(B[i]))
     print("\n")
 
 def main():

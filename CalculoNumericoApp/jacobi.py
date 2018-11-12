@@ -22,7 +22,6 @@ def jacobi(n,A,y,tol,n_max):
     return x_new
 
 def jacobi_iter(n,A,y,n_max):
-    eps = tol + 1
     k = 0
     x_old = np.zeros(n)
     x_new = np.zeros(n)
