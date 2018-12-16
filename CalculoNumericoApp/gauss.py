@@ -19,7 +19,7 @@ def gauss(m,A,y):
                     break
         for i in range(j+1,m):
             mult = - A[i][j] / A[j][j]
-            for k in range(j,m-1):
+            for k in range(j,m):
                 A[i][k] += mult * A[j][k]
             y[i] += mult * y[j]
     x = np.zeros(m)

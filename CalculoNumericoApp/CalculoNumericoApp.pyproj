@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8ca25be9-2526-4d06-bed1-12d3d897306e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>tarefa2.py</StartupFile>
+    <StartupFile>Lista 2\tarefa2newton.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,6 +29,24 @@
     <Compile Include="jacobi.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="lagrange.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lista 2\tarefa1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lista 2\tarefa2newton.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lista 2\tarefa2runge.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lista 2\tarefa2seno.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lista 2\tarefa3.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="newton.py">
       <SubType>Code</SubType>
     </Compile>
@@ -38,13 +56,16 @@
     <Compile Include="parametros.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="runge.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="sigma.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="tarefa1.py">
+    <Compile Include="Lista 1\tarefa1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="tarefa2.py">
+    <Compile Include="Lista 1\tarefa2.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="test.py">
@@ -56,6 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lista 1\" />
+    <Folder Include="Lista 2\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
