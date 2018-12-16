@@ -23,6 +23,7 @@ def estimarIteracao(m,A,y,tol):
     while(eps > tol):
         eps = (sigma_0 ** k)/(1-sigma_0)*norma_0
         k += 1
+        print("Epsilon na iteração " + str(k) + ": " + str(eps))
     return k
 
 def buscaBinaria(t,T,n):
